@@ -9,6 +9,9 @@
 <body>
 <h1>This is a new feature</h1>
 <h1>This is another new feature2</h1>
+
 <h3><a href="/DemoWeb/function/test.view">TestServlet1</a></h3>
+
+
 </body>
 </html>

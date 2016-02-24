@@ -17,11 +17,11 @@
   </resource-ref>
   
   <servlet>
-    <servlet-name>TestServlet1</servlet-name>
+    <servlet-name>TestServlet</servlet-name>
     <servlet-class>view.TestServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>TestServlet1</servlet-name>
+    <servlet-name>TestServlet</servlet-name>
     <url-pattern>/function/test.view</url-pattern>
   </servlet-mapping>
   
