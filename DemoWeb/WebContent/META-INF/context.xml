@@ -3,7 +3,7 @@
 
   <Resource name="jdbc/TestDB2" auth="Container" type="javax.sql.DataSource"
                maxTotal="100" maxIdle="30" maxWaitMillis="10000"
-               username="sa" password="78a9s01" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+               username="sa" password="sa123456" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
                url="jdbc:sqlserver://localhost:1433;database=java"/>
 
 </Context>
