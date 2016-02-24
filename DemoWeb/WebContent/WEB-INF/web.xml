@@ -9,7 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-    <resource-ref>
+  <resource-ref>
     <res-ref-name>jdbc/TestDB2</res-ref-name>
     <res-type>javax.sql.DataSource</res-type>
     <res-auth>Container</res-auth>
@@ -17,20 +17,28 @@
   </resource-ref>
   
   <servlet>
-  <servlet-name>DemoServlet</servlet-name>
-  <servlet-class>view.DemoServlet</servlet-class>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>view.TestServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  <servlet-name>DemoServlet</servlet-name>
-  <url-pattern>/demo2.view</url-pattern>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/test.view</url-pattern>
   </servlet-mapping>
   
   <servlet>
-  <servlet-name>SendPictureServlet</servlet-name>
-  <servlet-class>view.SendPictureServlet</servlet-class>
+    <servlet-name>DemoServlet</servlet-name>
+    <servlet-class>view.DemoServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  <servlet-name>SendPictureServlet</servlet-name>
-  <url-pattern>/view/SendPictureServlet</url-pattern>
+    <servlet-name>DemoServlet</servlet-name>
+    <url-pattern>/demo2.view</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SendPictureServlet</servlet-name>
+    <servlet-class>view.SendPictureServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendPictureServlet</servlet-name>
+    <url-pattern>/view/SendPictureServlet</url-pattern>
   </servlet-mapping>
 </web-app>
