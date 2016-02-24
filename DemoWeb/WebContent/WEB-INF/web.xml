@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>DemoWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <resource-ref>
+    <res-ref-name>jdbc/TestDB2</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+    <res-sharing-scope>Shareable</res-sharing-scope>
+  </resource-ref>
+  
+  <servlet>
+  <servlet-name>DemoServlet</servlet-name>
+  <servlet-class>view.DemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DemoServlet</servlet-name>
+  <url-pattern>/demo2.view</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SendPictureServlet</servlet-name>
+  <servlet-class>view.SendPictureServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SendPictureServlet</servlet-name>
+  <url-pattern>/view/SendPictureServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
