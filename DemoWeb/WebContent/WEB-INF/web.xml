@@ -15,6 +15,7 @@
     <res-auth>Container</res-auth>
     <res-sharing-scope>Shareable</res-sharing-scope>
   </resource-ref>
+  
   <servlet>
   <servlet-name>DemoServlet</servlet-name>
   <servlet-class>view.DemoServlet</servlet-class>
@@ -23,6 +24,7 @@
   <servlet-name>DemoServlet</servlet-name>
   <url-pattern>/demo2.view</url-pattern>
   </servlet-mapping>
+  
   <servlet>
   <servlet-name>SendPictureServlet</servlet-name>
   <servlet-class>view.SendPictureServlet</servlet-class>
